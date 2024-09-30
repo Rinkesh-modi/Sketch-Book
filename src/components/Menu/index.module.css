@@ -1,0 +1,3 @@
+.menuContainer {
+    @apply inline-flex gap-10 px-4 py-2 bg-white text-black rounded-md mx-auto;
+}
