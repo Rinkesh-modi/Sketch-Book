@@ -7,7 +7,7 @@ import {
   faRotateLeft,
   faFileArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
-import styles from "./index.module.css";
+import styles from "./menu.module.css";
 
 function Menu() {
   return (
