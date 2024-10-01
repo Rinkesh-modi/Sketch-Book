@@ -1,18 +1,47 @@
 import React from "react";
+import { COLORS } from "@/constants";
+import styles from "./toolbox.module.css";
 
 function Toolbox() {
   const updateBrushSize = (e) => {};
   return (
-    <div>
-      <div className="">
-        <h4>Stroke Color</h4>
-        <div className="">
-          <div />
+    <div className={styles.toolboxContainer}>
+      <div className={styles.toolItem}>
+        <h4 className={styles.toolText}>Stroke Color</h4>
+        <div className={styles.itemContainer}>
+          <div
+            className={styles.colorBox}
+            style={{ backgroundColor: COLORS.BLACK }}
+          />
+          <div
+            className={styles.colorBox}
+            style={{ backgroundColor: COLORS.RED }}
+          />
+          <div
+            className={styles.colorBox}
+            style={{ backgroundColor: COLORS.GREEN }}
+          />
+          <div
+            className={styles.colorBox}
+            style={{ backgroundColor: COLORS.BLUE }}
+          />
+          <div
+            className={styles.colorBox}
+            style={{ backgroundColor: COLORS.ORANGE }}
+          />
+          <div
+            className={styles.colorBox}
+            style={{ backgroundColor: COLORS.YELLOW }}
+          />
+          <div
+            className={styles.colorBox}
+            style={{ backgroundColor: COLORS.WHITE }}
+          />
         </div>
       </div>
-      <div className="">
-        <h4>Brush Size</h4>
-        <div className="">
+      <div className={styles.toolItem}>
+        <h4 className={styles.toolText}>Brush Size</h4>
+        <div className={styles.itemContainer}>
           <input
             type="range"
             min={1}
